@@ -1,2 +1,2 @@
 # WiKA
-The WiKA app
+The WiKA app - README COMING SOON
