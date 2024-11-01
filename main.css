@@ -1,80 +1,120 @@
-* {
+/* main.css */
+body {
     margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.chunk {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.chunk1 {
+    background-color: #3498db;
+}
+
+.chunk2 {
+    background-color: #2ecc71;
+}
+
+.chunk3 {
+    background-color: #e74c3c;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    width: 100%;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
+header .logo h1 {
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Header Styling */
-header {
-    background-color: #000000;
-    color: #fff;
-    padding: 1.5rem;
-    text-align: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: flex-end;
     width: 100%;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+nav a, .language-selector label {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-header p {
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-/* Main Section Styling */
-main {
-    max-width: 800px;
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    font-size: 1.8rem;
-    color: #F7559A;
-    margin-bottom: 1rem;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #000000;
-    color: #fff;
+.slogan {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
     text-align: center;
-    padding: 1rem;
-    width: 100%;
+    font-weight: bold;
+    font-size: 3em;
+    color: #ffffff;
+    margin: 0;
+
+    user-select: none; 
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.phrase {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.trademark-symbol {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
+.background {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(207, 30, 223, 0.671);
+    z-index: -1;
+}
+
+footer {
+    position: relative;
     bottom: 0;
-}
-
-footer p {
-    font-size: 0.9rem;
-}
-
-/* Logo Style */
-.logo-container {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem; /* Adds space between the logo and the title */
-}
-
-.logo {
-    width: 50px; /* Adjust size as needed */
-    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-top: auto;
 }

@@ -1,39 +1,66 @@
 <!DOCTYPE html>
-<html lang="en-ca">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WiKA - Find love through language </title>
+    <title>WiKA | Love in Language</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="phrases.js"></script>
+    
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="icons\wika_logo.png" alt="wika_logo" class="logo">
+    <header style="position: fixed; width: 100%; top: 0; z-index: 2;">
+        <div class="logo">
             <h1>WiKA</h1>
         </div>
-        <p>Love in language</p>
+        <nav style="margin-left: auto; display: flex; align-items: center; justify-content: flex-end; gap: 20px;"><ul>
+                <li><a href="#" onclick="console.log('About clicked')">About</a></li>
+                <li><a href="#" onclick="console.log('Download clicked')">Download</a></li>
+                <li><a href="#" onclick="console.log('Sign In clicked')">Sign In</a></li>
+                
+            </ul>
+        </nav>
+        <style>
+            
+        .full-page {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 60px;
+            box-sizing: border-box;
+        }
+        </style>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to WiKA, where language meets love.</p>
+    <main style="flex: 1 0 auto;">
+        <section class="slogan full-page">
+            <h2>Love in Language<span class="trademark-symbol">&reg;</span></h2>
+            <div id="phrases-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;"></div>
         </section>
-
-        <section id="features">
-            <h2>Features</h2>
-            <p>Explore, learn, and connect through language.</p>
+        <section class="background">
+            <div class="overlay"></div>
+            <script>
+                console.log("Overlay section loaded");
+            </script>
         </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Feel free to reach out for more information.</p>
+            <section class="chunk chunk1">
+            <h2>Placeholder Section 1</h2>
+        </section>
+        <section class="chunk chunk2">
+            <h2>Placeholder Section 2</h2>
+        </section>
+        <section class="chunk chunk3">
+            <h2>Placeholder Section 3</h2>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 WiKA. All rights reserved.</p>
+        <script>
+            console.log("Footer loaded");
+        </script>
     </footer>
 </body>
 </html>
