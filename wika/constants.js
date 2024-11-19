@@ -1,0 +1,3 @@
+// URLs
+export const URL_AUTHENTICATION_TOKEN_REFRESH = "";
+export const URL_AUTHENTICATION_LOGIN = "";
